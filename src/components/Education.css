@@ -1,0 +1,62 @@
+.education-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem;
+    background-image: conic-gradient(#121b32,#2e2015,#121b32);
+    color: rgb(105, 160, 206);
+    min-height: 60vh;
+    width: 100%;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    font-family: "Courier New", Courier, monospace;
+    color: #e7eaf1;
+    margin-bottom: 1rem;
+  }
+  
+  .education-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    width: 80%;
+  }
+  
+  .education-item {
+    display: flex;
+    align-items: center;
+    background-color: rgba(109, 104, 153, 0.404);
+    padding: 1rem;
+    border-radius: 10px;
+    width: 100%;
+    transition: background-color .1s ease-in-out;
+  }
+  
+  .education-item:hover {
+    background-color: #0000009c;
+    color: #a0bee0fd;
+  }
+  
+  .education-icon {
+    font-size: 2rem;
+    margin-right: 1rem;
+  }
+  
+  .education-details {
+    font-size: 1.2rem;
+    font-family: "Courier New", Courier, monospace;
+  }
+  
+  @media (max-width: 700px) {
+    .education-section {
+      padding: 1rem;
+    }
+    .education-item {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  }

@@ -1,0 +1,83 @@
+
+
+.bannerbase{
+
+    background-image: linear-gradient(40deg, #bb4040, #33319e);
+
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding:2rem 1rem ;
+}
+.videocont{
+    margin-top: 1rem;
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.textbanner{
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+    padding: .6rem;
+    position: relative ;
+}
+
+.textbanner img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.raincont{
+    
+    margin-top: 1rem;
+    background-image: conic-gradient(from var(--angle), #ff4545, #00ff99, #006aff, #ff0095, #ff4545);
+    border-radius: 1rem;
+    animation: circles 3s linear infinite;
+    transition: all .5s linear;
+
+}
+@keyframes circles{
+    from{
+        --angle:0deg;
+    }
+    to{
+        --angle:360deg;
+    }
+}
+.raincont:hover{
+    transform: scale(1.02);
+    animation: circles .7s linear infinite;
+
+}
+
+@media (max-width: 700px){
+    .videocont{
+        width: 300px;
+        height: 200px;
+        overflow: hidden;
+        
+    }
+    .textbanner{
+        width: 300px;
+        height: 200px;
+        overflow: hidden;
+        padding: .3rem;
+        
+    }
+    .textbanner img{
+        border-radius: 1rem;
+    }
+    .raincont{
+        padding: .2rem;
+    }
+}

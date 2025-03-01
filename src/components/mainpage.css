@@ -1,0 +1,235 @@
+
+.mainbase {
+    margin-top: 5rem;
+    /* very imp for this */
+
+    /* background: linear-gradient(140deg, #2C3930, #223041, #080808); */
+    background-image: url('../assets/bgimage.png');
+    background-size: 150% 150%;
+    animation: bgani 155s linear infinite;
+}
+.mainbase::before{
+    filter: blur(10px);
+}
+
+@keyframes bgani {
+    0% {
+        background-position: 0% 50%;
+    }
+    25% {
+        background-position: 50% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    75% {
+        background-position: 50% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.mainb{
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.mainleft{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-width: 30rem;
+    min-height: 30rem;
+    height: inherit;
+    background-color: rgba(0, 0, 255, 0);
+    background-color: rgba(255, 255, 255, 0.11);
+}
+.mainright{
+    display: flex;
+    flex-grow: 1;
+
+    justify-content: center;
+    align-items: center;
+
+    height: inherit;
+    min-width: 30rem;
+    
+    background-color: rgba(255, 0, 0, 0);
+}
+.namediv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.ppphoto{
+    width: 100mm;
+    height: 100mm;
+    overflow: hidden;
+}
+.Dpp{
+    width: 100%;
+    height: 100%;
+    transform: scale(1.2);
+    object-fit:cover;
+    transition: transform cubic-bezier(0.215, 0.610, 0.355, 1) 1s;
+}
+.Dpp:hover{
+    transform: scale(1.4) translateX(1rem) translateY(1rem);
+}
+.maintext{
+    margin: 1.5rem;
+    font-size: x-large;
+    font-weight: bolder;
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+}
+.mtext{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.condiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 9rem;
+    height: 3rem;
+    background-color: black;
+    color: white;
+
+    transition: all .3s linear;
+}
+.condiv:hover{
+    filter: invert(1);
+    font-size: large;
+    box-shadow: 1px 1px .2rem .2rem rgb(228, 228, 228);
+}
+
+
+
+.mainSocials{
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.msicons{
+    border: 1.8px solid rgba(255, 0, 0, 0.055);
+    filter: invert(0.8);
+    margin: 1rem;
+    display: flex;
+
+}
+.msicons img{
+    height: 1.5rem;
+    width: 1.5rem;
+    transform: scale(1.2);
+    margin: .5rem;
+}
+.msicons:hover{
+    transform: scale(1.05);
+    border-bottom: 2px solid black;
+    filter: invert(1);
+}
+
+.rightcont{
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.212);
+    width: 80%;
+}
+  @font-face {
+    font-family: "DangerFont"; 
+    src: url("../assets//Ardhelia_Free.ttf");
+}
+  .aboutme{
+    
+    background-image: linear-gradient(200deg, #0f64e4, #ff7e5f);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    font-family: "DangerFont";
+  }
+  
+  .introright{
+    width: 90%;
+    color: rgb(143, 155, 155);
+    font-size: large;
+    transition: all cubic-bezier(0.165, 0.84, 0.44, 1) .4s;
+  }
+
+  .resumebut{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 9rem;
+    height: 3rem;
+    background-color: black;
+    color:white;
+    margin: 1rem 0rem;
+    cursor: cell;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    transition: all .3s linear;
+  }
+  .resumebut:hover{
+    filter: invert(1);
+    font-size: large;
+    box-shadow: 1px 1px .2rem .2rem rgb(228, 228, 228);
+}
+
+
+
+
+
+/* Large screens (Desktops) */
+@media (min-width: 1024px) {
+    
+}
+
+/* Medium screens (Tablets) */
+@media (max-width: 1023px) and (min-width: 768px) {
+    .mainbase{
+        margin-top: 8.5rem;
+    }
+    .mainb{
+        flex-direction: column;
+    }
+    .mainleft{
+        padding-top: 2rem;
+        width: 100%;
+    }
+    .rightcont{
+        margin: 2rem 0rem;
+    }
+}
+
+
+/* Small screens (Mobile) */
+@media (max-width: 767px) {
+    .mainb{
+        flex-direction: column;
+    }
+    .mainleft{
+        width: 100vw;
+        min-width: 0px;
+        margin: 8rem 0rem;
+    }
+    .mainright{
+        width: 100vw;
+        min-width: 0px;
+    }
+    .rightcont{
+        margin: 2rem 0rem;
+    }
+   
+}

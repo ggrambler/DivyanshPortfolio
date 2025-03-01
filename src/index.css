@@ -1,0 +1,132 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.nn{
+  display: none;
+}
+.headerbase{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 10%;
+  color: aliceblue;
+  background-image: linear-gradient(100deg, #313394, #4e4141);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+
+  opacity: 80%;
+}
+.headerleft{
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #292930;
+  padding: 0 1rem;
+}
+.headerright{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.headeritem{
+  margin: 0 1rem;
+  cursor: pointer;
+}
+.headeritem img{
+  width: 1.5rem;
+  height: 1.5rem;
+  filter: invert();
+}
+.headeritem:hover{
+  border-bottom: 2px solid rgb(247, 247, 247);
+  font-weight: 600;
+}
+.homeicon{
+  height: 2rem;
+  width: 2rem;
+  transition: all linear .1s;
+  filter: invert();
+}
+.homeicon:hover{
+  transform: scale(1.2);
+}
+.headername{
+  display: flex;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: 'Courier New', Courier, monospace;
+}
+.blink{
+  animation: blinking 2s infinite;
+}
+@keyframes blinking{
+  0%{
+    font-weight: bolder;
+  }
+  50%{
+    font-weight: 100;
+  }
+}
+
+
+
+
+
+
+/* Large screens (Desktops) */
+@media (min-width: 1024px) {
+    body {
+        background-color: rgb(22, 18, 17);
+    }
+}
+
+/* Medium screens (Tablets) */
+@media (max-width: 1023px) and (min-width: 768px) {
+    body {
+        background-color: rgb(33, 36, 33);
+    }
+    .headerbase{
+      display: block;
+    }
+    .headeritem{
+      margin: 1rem;
+    }
+}
+
+/* Small screens (Mobile) */
+@media (max-width: 767px) {
+    body {
+        background-color: #2C3930;
+    }
+    .nn{
+      font-family:cursive;
+      display: flex;
+      font-size: x-large;
+      border-bottom: 1px dashed white;
+      margin: 10px;
+      transition: all cubic-bezier(0.19, 1, 0.22, 1) .2s;
+    }
+    .nn:hover{
+      transform: scale(1.1);
+    }
+    .headerbase{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      
+    }
+    .headerleft{
+      display: none;
+    }
+}
