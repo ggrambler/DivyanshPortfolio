@@ -60,7 +60,7 @@ export function MP(){
                     I am a tech-savvy and passionate developer with a Bachelor's degree in Software Development, actively seeking opportunities to apply my skills. My expertise spans Web Development, Game Development, and AI, areas that fuel my creativity and drive for innovation.I am committed to continuous learning, always exploring new technologies and refining my craft. I have attended multiple seminars and boot camps on Software Development, expanding my knowledge and staying ahead in the ever-evolving tech landscape. With a deep passion for problem-solving and building impactful solutions, I am eager to contribute to a dynamic team and push the boundaries of technology!
                     </div>
                     <div className="resumebut"
-                    onClick={() => window.open("https://drive.google.com/file/d/1gr6LjxoQ8xfsqPQqmx0ij2X7CSrKTC90/view?usp=drive_link", "_blank")}>
+                    onClick={() => window.open("https://drive.google.com/file/d/1xI2WFoUjEuEuKX0gm012wTsPwkQ9jJXU/view?usp=sharing", "_blank")}>
                         Resume
                     </div>
                 </div>
